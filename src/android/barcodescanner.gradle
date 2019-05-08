@@ -12,8 +12,10 @@ repositories{
 }
 
 dependencies {
+    compile(name:'barcodescanner', ext:'aar') {
+      exclude module: 'support-v4'
+    }
     compile 'com.android.support:support-v4:+'
-    compile(name:'barcodescanner', ext:'aar')
 }
 
 android {
